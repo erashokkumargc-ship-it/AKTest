@@ -3,40 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
+  <title>One-Line to One-Page</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="app-shell">
-    <section class="calculator">
-      <input id="display" class="display" type="text" value="0" disabled>
-      <div class="buttons">
-        <button class="btn btn-accent" data-action="clear">C</button>
-        <button class="btn btn-accent" data-action="backspace">⌫</button>
-        <button class="btn operator" data-value="%">%</button>
-        <button class="btn operator" data-value="/">÷</button>
+    <section class="writer-panel">
+      <header class="panel-header">
+        <div>
+          <p class="eyebrow">Content Studio</p>
+          <h1>One-Line to One-Page</h1>
+        </div>
+        <button id="generateBtn" class="generate-btn">Generate</button>
+      </header>
 
-        <button class="btn number" data-value="7">7</button>
-        <button class="btn number" data-value="8">8</button>
-        <button class="btn number" data-value="9">9</button>
-        <button class="btn operator" data-value="*">×</button>
+      <div class="workspace">
+        <section class="input-panel">
+          <label for="ideaInput">Enter your one-line idea</label>
+          <textarea id="ideaInput" rows="5" placeholder="Example: A mobile app that helps students track assignments and study time."></textarea>
+          <button id="sampleBtn" class="sample-btn">Use example</button>
+        </section>
 
-        <button class="btn number" data-value="4">4</button>
-        <button class="btn number" data-value="5">5</button>
-        <button class="btn number" data-value="6">6</button>
-        <button class="btn operator" data-value="-">−</button>
-
-        <button class="btn number" data-value="1">1</button>
-        <button class="btn number" data-value="2">2</button>
-        <button class="btn number" data-value="3">3</button>
-        <button class="btn operator" data-value="+">+</button>
-
-        <button class="btn number" data-value="0">0</button>
-        <button class="btn number" data-value=".">.</button>
-        <button class="btn btn-equals" data-action="calculate">=</button>
+        <section class="output-panel">
+          <div id="output" class="output-content">
+            <p class="placeholder">Your one-page description will appear here.</p>
+          </div>
+        </section>
       </div>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

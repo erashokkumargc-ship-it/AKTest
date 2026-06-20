@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Line to One-Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="writer-panel">
+      <header class="panel-header">
+        <div>
+          <p class="eyebrow">Agent Workflow</p>
+          <h1>One-Line to One-Page</h1>
+        </div>
+        <button id="generateBtn" class="generate-btn">GenerateIT</button>
+      </header>
+
+      <div class="workspace">
+        <section class="input-panel">
+          <label for="ideaInput">Enter your one-line idea</label>
+          <textarea id="ideaInput" rows="5" placeholder="Example: A mobile app that helps students track assignments and study time."></textarea>
+          <button id="sampleBtn" class="sample-btn">Use example</button>
+        </section>
+
+        <section class="output-panel">
+          <div id="output" class="output-content">
+            <p class="placeholder">Your one-page description will appear here.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
